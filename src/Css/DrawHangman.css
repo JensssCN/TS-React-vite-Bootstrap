@@ -1,0 +1,106 @@
+.hangman-container {
+  height: 400px;
+  width: 250px;
+}
+
+.hangman-part {
+  position: absolute;
+  background: black;
+  border-radius: 12px;
+}
+
+.head {
+  width: 70px;
+  height: 70px;
+  border: 8px solid black;
+  border-radius: 50%;
+  top: 45px;
+  right: -30px;
+  background: transparent;
+}
+
+.body {
+  width: 10px;
+  height: 120px;
+  top: 110px;
+  right: 0;
+}
+
+.right-arm {
+  width: 90px;
+  height: 10px;
+  top: 150px;
+  right: -90px;
+  transform: rotate(-30deg);
+  transform-origin: left bottom;
+}
+
+.left-arm {
+  width: 90px;
+  height: 10px;
+  top: 150px;
+  right: 10px;
+  transform: rotate(30deg);
+  transform-origin: right bottom;
+}
+
+.right-leg {
+  width: 100px;
+  height: 10px;
+  top: 215px;
+  right: -90px;
+  transform: rotate(60deg);
+  transform-origin: left bottom;
+}
+
+.left-leg {
+  width: 100px;
+  height: 10px;
+  top: 215px;
+  right: 0;
+  transform: rotate(-60deg);
+  transform-origin: right bottom;
+}
+
+/* Scaffold parts */
+.hangman-top-bar {
+  height: 50px;
+  width: 10px;
+  background: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 12px;
+}
+
+.hangman-angled-rope {
+  height: 8px;
+  width: 100px;
+  background: black;
+  position: absolute;
+  top: 40px;
+  left: 39px;
+  transform: rotate(-50deg);
+}
+
+.hangman-horizontal-bar {
+  height: 10px;
+  width: 200px;
+  background: black;
+  margin-left: 50px;
+}
+
+.hangman-vertical-pole {
+  height: 350px;
+  width: 10px;
+  background: black;
+  margin-left: 50px;
+}
+
+.hangman-base {
+  height: 8px;
+  width: 180px;
+  background: black;
+  border-radius: 12px;
+  margin-left: -30px;
+}

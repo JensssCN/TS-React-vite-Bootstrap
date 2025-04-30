@@ -1,0 +1,45 @@
+button.keyboard-btn {
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid black;
+  border-radius: 12px;
+  background: transparent;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button.keyboard-btn.active {
+  background-color: #18cc51 !important;
+  border: 3px solid black !important;
+  color: black !important;
+}
+
+button.keyboard-btn.inactive {
+  color: #cf0e15 !important;
+  border: 3px solid #cf0e15 !important;
+}
+
+button.keyboard-btn:hover:not(:disabled),
+button.keyboard-btn:focus:not(:disabled) {
+  background-color: #d1d5db !important;
+  transform: scale(1.05);
+  color: black !important;
+  border: 3px solid black;
+}
+
+.Keyboard {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 0.5rem;
+}
+
+.Keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}

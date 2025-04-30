@@ -1,0 +1,7 @@
+.hangman-letter {
+  border-bottom: 5px solid black;
+  border-radius: 0.375rem;
+  display: inline-block;
+  width: 2.5rem;
+  text-align: center;
+}
