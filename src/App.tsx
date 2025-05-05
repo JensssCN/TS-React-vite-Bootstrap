@@ -53,26 +53,24 @@ function App() {
   }, [guessLetters, addGuessLetter]);
 
   return (
-    <Container className="min-vh-100 d-flex flex-column justify-content-start align-items-center pt-5">
-      <h1 className="text-center mb-5">Hänga Gubbe gjort med Bootstrap</h1>
+    <Container className="Game-Container">
+      <h1 className="Game-Title">Hänga Gubbe gjort med Bootstrap</h1>
 
-      {/* Win/Loss Modal */}
       <Modal show={isWinner || isLoser} centered>
         <Modal.Header className={isWinner ? "bg-success" : "bg-danger"}>
           <Modal.Title className="text-white">
             {isWinner ? "Grattis, du vann!" : "Du förlorade."}
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body className="d-flex justify-content-center">
+        <Modal.Body className="Play-Again-Modal">
           <Button variant="light" onClick={resetGame}>
             Spela igen
           </Button>
         </Modal.Body>
       </Modal>
 
-      {/* Main game layout */}
-      <Row className="w-100 justify-content-center mt-5">
-        <Col md={6} className="d-flex justify-content-center">
+      <Row className="Keyboard-And-Word">
+        <Col md={6} className="Draw-Hangman">
           <DrawHangman numberOfGuess={incorrectLetters.length} />
         </Col>
 

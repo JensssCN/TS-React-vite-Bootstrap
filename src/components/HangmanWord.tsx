@@ -12,7 +12,7 @@ const HangmanWord = ({
   result = false,
 }: HangmanWordProps) => {
   return (
-    <div className="d-flex flex-wrap justify-content-center gap-2 fs-2 fw-bold text-uppercase">
+    <div className="Wrapper">
       {wordToGuess.split("").map((letter, index) => (
         <span className="hangman-letter" key={index}>
           <span

@@ -3,6 +3,27 @@ h1 {
   font-size: 2.5rem;
 }
 
+.Game-Title {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.Play-Again-Modal {
+  display: flex;
+  justify-content: center;
+}
+
+.Keyboard-And-Word {
+  width: 100%;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.Draw-Hangman {
+  display: flex;
+  justify-content: center;
+}
+
 .modal-title {
   font-weight: bold;
   font-size: 1.5rem;
