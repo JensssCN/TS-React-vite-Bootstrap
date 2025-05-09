@@ -30,6 +30,7 @@ const Keyboard = ({
 
             return (
               <Button
+                variant="light"
                 key={key}
                 onClick={() => addGuessLetter(key)}
                 className={`keyboard-btn 
